@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="A minimal daily thought page focused on discipline, momentum, and consistency." />
+  <title>Daily Thought</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="page" aria-label="Daily thought page">
+    <header class="topbar">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme" aria-pressed="false">
+        <span class="theme-icon sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+          </svg>
+        </span>
+        <span class="theme-icon moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </span>
+      </button>
+    </header>
+
+    <section class="hero" aria-live="polite">
+      <p class="label">Thought for today</p>
+      <blockquote id="quoteText" class="quote">Loading…</blockquote>
+
+      <div class="actions">
+        <button id="shareBtn" class="primary-button" type="button">Share</button>
+        <button id="copyBtn" class="secondary-button" type="button">Copy</button>
+      </div>
+
+      <p id="status" class="status" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer class="footer">
+      <p>Set this page as your browser homepage so you see the daily thought every time you open the browser.</p>
+      <p>No ads. No extra updates. Just one daily thought—nothing to distract you.</p>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
